@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?><!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rl1"
+        android:background="@drawable/bg1"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        tools:context="it.company.mindline.tictactoe.playArea">
+
+        <RelativeLayout
+            android:id="@+id/rltxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtFirst1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:fontFamily="@font/poppins"
+                android:text="@string/select_your_choice"
+                android:layout_centerVertical="true"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+
+            <RadioGroup
+                android:id="@+id/rg_grp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:checkedButton="@+id/cross"
+                android:layout_toEndOf="@+id/txtFirst1"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/cross"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:fontFamily="@font/poppins"
+                    android:buttonTint="@android:color/white"
+                    android:text="@string/cross"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18dp" />
+
+                <RadioButton
+                    android:id="@+id/naught"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:fontFamily="@font/poppins"
+                    android:buttonTint="@android:color/white"
+                    android:text="@string/naught"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18dp" />
+                </RadioGroup>
+
+
+                <Button
+                    android:id="@+id/start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/btn_shape_small"
+                    android:text="@string/start"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/poppins"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text"
+                android:layout_below="@+id/rg_grp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/poppins"
+                android:layout_marginStart="150dp"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:weightSum="100">
+
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="0dp"
+                android:layout_height="95dp"
+                android:layout_weight="33"
+                android:alpha="0.50"
+                android:color="#66FF0000"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#E50D0D"
+                android:textSize="32sp" />
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/white" />
+
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="0dp"
+                android:layout_height="95dp"
+                android:layout_weight="33"
+                android:alpha="0.50"
+                android:color="#66FF0000"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#E50D0D"
+                android:textSize="32sp" />
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/white" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="0dp"
+                android:layout_height="95dp"
+                android:layout_weight="33"
+                android:alpha="0.50"
+                android:color="#66FF0000"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#E50D0D"
+                android:textSize="32sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@android:color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:weightSum="100">
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="0dp"
+                android:layout_height="95dp"
+                android:layout_weight="33"
+                android:alpha="0.50"
+                android:color="#66FF0000"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#E50D0D"
+                android:textSize="32sp" />
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/white" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="0dp"
+                android:layout_height="95dp"
+                android:layout_weight="33"
+                android:alpha="0.50"
+                android:color="#66FF0000"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#E50D0D"
+                android:textSize="32sp" />
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/white" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="0dp"
+                android:layout_height="95dp"
+                android:layout_weight="33"
+                android:alpha="0.50"
+                android:color="#66FF0000"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#E50D0D"
+                android:textSize="32sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@android:color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:weightSum="100">
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="0dp"
+                android:layout_height="95dp"
+                android:layout_weight="33"
+                android:alpha="0.50"
+                android:color="#66FF0000"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#E50D0D"
+                android:textSize="32sp" />
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/white" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="0dp"
+                android:layout_height="95dp"
+                android:layout_weight="33"
+                android:alpha="0.50"
+                android:color="#66FF0000"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#E50D0D"
+                android:textSize="32sp" />
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/white" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="0dp"
+                android:layout_height="95dp"
+                android:layout_weight="33"
+                android:alpha="0.50"
+                android:color="#66FF0000"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#E50D0D"
+                android:textSize="32sp" />
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtFirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/player_1"
+            android:textColor="#FFFFFF"
+            android:textSize="22dp" />
+
+        <TextView
+            android:id="@+id/txtFirst2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="55dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/vs"
+            android:textColor="#FFFFFF"
+            android:textSize="22dp" />
+
+            <Button
+                android:id="@+id/replay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_shape_small"
+                android:text="@string/replay"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/poppins"/>
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_below="@+id/replay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_shape_small"
+            android:text="@string/reset"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/poppins"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/txtSecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtFirst"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/player_2"
+            android:textColor="#FFFFFF"
+            android:textSize="22dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</ScrollView>

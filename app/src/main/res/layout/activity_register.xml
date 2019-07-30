@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BCAC3C"
+    tools:context="it.company.mindline.tictactoe.Register">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/poppins"
+                android:text="Tic Tac Toe"
+                android:textColor="#FFFFFF"
+                android:textSize="40dp" />
+
+            <ImageView
+                android:id="@+id/blue_underline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/blue_underline" />
+
+            <RelativeLayout
+                android:id="@+id/levelLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/blue_underline"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+
+
+                <EditText
+                    android:id="@+id/etFirst"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Player Name For X"
+                    android:textColorHint="#FFFFFF"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txt"
+                    android:layout_below="@+id/etFirst"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:textSize="20dp"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="@font/poppins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VS"/>
+
+                <EditText
+                    android:id="@+id/etSecond"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/txt"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Player Name For O"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:textSize="20dp"
+                    />
+
+
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/xoboxlinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/levelLinearLayout"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="44dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginBottom="24dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="100">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="54dp"
+                        android:layout_weight="33.3"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center"
+                        android:text="X"
+                        android:textColor="#FFFFFF"
+                        android:textSize="32sp" />
+
+                    <View
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:background="#E3C760" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="64dp"
+                        android:layout_weight="33.3"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="#FFFFFF"
+                        android:textSize="32dp" />
+
+                    <View
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:background="#E3C760" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="64dp"
+                        android:layout_weight="33.3"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center"
+                        android:text="O"
+                        android:textColor="#FFFFFF"
+                        android:textSize="32dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="#E3C760" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="100">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="64dp"
+                        android:layout_weight="33.3"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="#FFFFFF"
+                        android:textSize="32dp" />
+
+                    <View
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:background="#E3C760" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="64dp"
+                        android:layout_weight="33.3"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center"
+                        android:text="O"
+                        android:textColor="#FFFFFF"
+                        android:textSize="32dp" />
+
+                    <View
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:background="#E3C760" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="64dp"
+                        android:layout_weight="33.3"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="#FFFFFF"
+                        android:textSize="32dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="#E3C760" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="100">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="64dp"
+                        android:layout_weight="33.3"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center"
+                        android:text="O"
+                        android:textColor="#FFFFFF"
+                        android:textSize="32dp" />
+
+                    <View
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:background="#E3C760" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="64dp"
+                        android:layout_weight="33.3"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="#FFFFFF"
+                        android:textSize="32dp" />
+
+                    <View
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:background="#E3C760" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="64dp"
+                        android:layout_weight="33.3"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center"
+                        android:text="X"
+                        android:textColor="#FFFFFF"
+                        android:textSize="32dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/xoboxlinearLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="22dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/btn_shape_round"
+                android:fontFamily="@font/poppins"
+                android:onClick="startGame"
+                android:text="Start"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/mul_adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-8688181532532282/9932268179">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tic"
+    tools:context="it.company.mindline.tictactoe.MainActivity">
+
+   <RelativeLayout
+       android:id="@+id/rl2"
+       android:layout_width="match_parent"
+       android:layout_centerVertical="true"
+       android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/poppins"
+        android:padding="8dp"
+        android:textColor="#0F1111"
+        android:textSize="18dp"
+        android:onClick="computerplay"
+        android:background="@drawable/buttonshape"
+        android:text="Play with computer"
+        />
+
+       <Button
+           android:id="@+id/button2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/button"
+           android:layout_centerInParent="true"
+           android:layout_marginTop="50dp"
+           android:padding="8dp"
+           android:background="@drawable/buttonshape"
+           android:fontFamily="@font/poppins"
+           android:onClick="startGame"
+           android:text="Play with friend"
+           android:textColor="#0F1111  "
+           android:textSize="18dp" />
+   </RelativeLayout>
+
+</RelativeLayout>
